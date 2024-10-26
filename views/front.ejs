@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Popup</title>
+    <!-- Correct the paths to point to the "public" folder -->
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Main content-->
+    <div class="main-content">
+      <h1>Welcome to the platform</h1>
+      <button id="registerBtn">Register</button>
+    </div>
+
+    <!-- Registration popup -->
+    <div id="registerPopup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
